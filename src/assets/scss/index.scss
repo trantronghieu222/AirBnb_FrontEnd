@@ -1,0 +1,21 @@
+// Helpers
+@import './helpers/Variable';
+
+// Layout
+@import './layout/HeaderHome';
+@import './layout/Footer';
+@import './layout/Carousel';
+
+// Components
+@import './components/SearchBox';
+@import './components//Anywhere';
+@import './components/BackToTop';
+@import './components/Location';
+@import './components//Modal';
+
+// Page
+@import './pages/Search';
+@import './pages/Detail';
+@import './pages/Login';
+@import './pages/Register';
+@import './pages/Profile';

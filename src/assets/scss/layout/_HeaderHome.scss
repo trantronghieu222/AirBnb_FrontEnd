@@ -1,0 +1,122 @@
+.header-home {
+    background: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-height: 120px;
+    display: grid;
+    align-items: center;
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $color-white-1;
+                font-weight: 400;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .nav-link:hover,
+            .nav-link.active {
+                color: #fe6b6e;
+            }
+        }
+    }
+
+    .profile-container {
+        // phần chung
+        .dropdown-toggle::after {
+            content: none;
+        }
+
+        .dropdown-menu {
+            left: 50%;
+            transform: translateX(-50%);
+
+            .dropdown-item:focus {
+                background-color: #f8f9fa;
+                color: $color-dark-1;
+            }
+        }
+
+        // Chưa login
+        .profile-dropdown {
+            width: 46px;
+            height: 46px;
+            background-color: #1e2e33;
+            border: 4px solid #fe6b6e;
+            border-radius: 50%;
+            transition: all 0.3s;
+
+            .dropdown-toggle {
+                background: none;
+                border: none;
+                color: black;
+
+                i {
+                    padding-right: 0px;
+                    color: white;
+                }
+            }
+
+            &:hover {
+                border: 4px solid #ffffff;
+            }
+        }
+
+        // Đã login
+        .profile-logged {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: all 0.3s;
+            .dropdown-toggle {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+            }
+
+            &:hover {
+                border: 2px solid #fe6b6e;
+            }
+        }
+    }
+}
+
+// Header scroll
+.header-home.scrolled {
+    background: #ffffff;
+    min-height: 80px;
+    transition: all 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $color-dark-1;
+            }
+
+            .nav-link:hover,
+            .nav-link.active {
+                color: #fe6b6e;
+            }
+        }
+    }
+
+    .profile-container {
+        .profile-logged {
+            .dropdown-toggle {
+                span {
+                    font-weight: bold;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

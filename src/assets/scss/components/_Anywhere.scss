@@ -1,0 +1,25 @@
+.anywhere {
+    padding: 50px 0;
+
+    .anywhere-title {
+        padding-bottom: 10px;
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+
+    .anywhere-item {
+        padding: 0 20px;
+
+        .card  {
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+    }
+
+    
+}

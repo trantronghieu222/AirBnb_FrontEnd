@@ -1,0 +1,21 @@
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 8px 15px;
+    background-color: #fe6b6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+.backToTop.visible {
+    display: block;
+}
+
+.backToTop:hover {
+    background-color: #0056b3;
+}

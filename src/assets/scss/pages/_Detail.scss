@@ -1,0 +1,290 @@
+.detail-template {
+    // Header trong detail
+    .header-home {
+        border-bottom: 1px solid #cfd3da;
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $color-dark-1;
+                }
+            }
+        }
+
+        .profile-logged {
+            .dropdown-toggle {
+                span {
+                    font-weight: bold;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    // detail
+    .detail {
+        padding-top: 120px;
+
+        .detail-container {
+            padding: 30px 0;
+
+            .detail-title {
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+
+                i {
+                    color: #fe6b6e;
+                }
+
+                a {
+                    color: $color-dark-1;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #fe6b6e;
+                    }
+                }
+            }
+
+            .detail-image {
+                width: 100%;
+
+                .ant-image {
+                    width: 100%;
+
+                    img {
+                        max-height: 500px;
+                        border-radius: 15px;
+                    }
+
+                    .ant-image-mask {
+                        border-radius: 15px;
+
+                    }
+                }
+            }
+
+            // Content
+            .detail-content {
+                .detail-left {
+
+                    // Detail 1
+                    .detail-room {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        border-bottom: 1px solid #cfd3da;
+
+                        .owner-avatar {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+                    // Detail 2
+                    .detail-features {
+                        padding-top: 20px;
+                        border-bottom: 1px solid #cfd3da;
+
+                        .feature-item {
+                            display: flex;
+                            padding-bottom: 20px;
+
+                            .feature-icon {
+                                padding-right: 15px;
+                            }
+
+                            .feature-content {
+                                h5 {
+                                    margin-bottom: 0;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    // Detail 3
+                    .detail-translate {
+                        padding: 20px 0;
+                        border-bottom: 1px solid #cfd3da;
+
+                        .translate-btn {
+                            display: flex;
+                            justify-content: space-between;
+                            color: $color-dark-1;
+                            text-decoration: none;
+                            height: 50px;
+                            width: 100%;
+                            padding: 10px 20px;
+                            border: 2px solid $color-dark-1;
+                            border-radius: 10px;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                background: #e5e7eb;
+                            }
+                        }
+
+                        .translate-content {
+                            padding: 10px 0;
+                            margin: 0;
+                        }
+                    }
+
+                    // Detail 4
+                    .detail-utilities {
+                        padding: 20px 0 80px 0;
+                        border-bottom: 1px solid #cfd3da;
+
+                        .ulility-content {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .utility-item {
+                                display: flex;
+                                padding: 10px;
+
+                                .utility-icon {
+                                    height: 20px;
+                                    width: 20px;
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+
+                        .utility-btn {
+                            text-decoration: none;
+                            display: inline-block;
+                            margin-top: 20px;
+                            padding: 10px 45px;
+                            border: 2px solid $color-dark-1;
+                            color: $color-dark-1;
+                            border-radius: 10px;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                background: #e5e7eb;
+                            }
+                        }
+                    }
+                }
+
+                // Detail-right
+                .detail-right {
+                    width: 80%;
+                    height: 575px;
+                    position: sticky;
+                    top: 80px;
+                    margin-top: 20px;
+                    // margin-left: auto;
+
+                    .detail-booking {
+                        width: 100%;
+                        height: 100%;
+                        border: 2px solid #cfd3da;
+                        border-radius: 15px;
+                        padding: 20px;
+
+                        // 1
+                        .booking-1 {
+                            .booking-1-right {
+                                svg {
+                                    color: #fe6b6e;
+                                }
+                            }
+                        }
+
+                        // 2
+                        .booking-2 {
+                            .booking-2-content {
+                                border: 1px solid $color-dark-1;
+                                border-radius: 10px;
+                                width: 100%;
+                                margin: auto;
+
+                                .booking-2-item {
+                                    border: 1px solid $color-dark-1;
+                                    padding: 10px;
+
+                                    .booking-quan {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        span {
+                                            padding: 10px 0;
+                                        }
+
+                                        .btn-plus,
+                                        .btn-minus {
+                                            background-color: #fe6b6e;
+                                            border: none;
+                                            border-radius: 50%;
+                                            width: 40px;
+                                            height: 40px;
+                                            color: $color-white-1;
+                                            transition: all 0.3s;
+
+                                            &:hover {
+                                                background: #9d174d;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .booking-2-item:nth-child(1) {
+                                    border-top-left-radius: 9px;
+                                }
+
+                                .booking-2-item:nth-child(2) {
+                                    border-top-right-radius: 9px;
+                                }
+
+                                .booking-2-item:nth-child(3) {
+                                    border-bottom-right-radius: 9px;
+                                    border-bottom-left-radius: 9px;
+                                }
+                            }
+
+                            .btn-booking {
+                                padding: 10px 0;
+                                color: $color-white-1;
+                                background: #fe6b6e;
+                                border: none;
+                                font-weight: bold;
+                                border-radius: 10px;
+                                transition: all 0.3s;
+
+                                &:hover {
+                                    background-color: #9d174d;
+                                }
+                            }
+                        }
+
+                        // 3
+                        .booking-3 {
+                            p {
+                                text-align: center;
+                                color: #9ca3af;
+                            }
+
+                            .booking-price,
+                            .booking-fee {
+                                padding-bottom: 30px;
+                                font-size: 1rem;
+                            }
+
+                            .booking-fee {
+                                border-bottom: 2px solid #cfd3da;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
